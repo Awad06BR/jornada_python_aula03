@@ -6,7 +6,7 @@
 
 idade = int(input("Idade: "))
 email = input("Email: ")
-18
+
 
 if not 18 <= idade <= 65:
     print ("Idade fora do intervalo")
