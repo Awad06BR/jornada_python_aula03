@@ -12,9 +12,8 @@ usuarios_invalido = []
 
 for usuario in usuarios:
     if usuario["email"] == '': 
-        usuarios_invalido.append(usuario)
+        usuarios_invalido = usuario
+        usuarios_invalido["ERROR"]= 'Email invalido!'
 
-print(usuarios_invalido)
+print(usuarios_invalido["ERROE"] +" usuario: "+usuarios_invalido["nome"])
 
-###Pendencia
-# Adicionar a mensagem de erro a ser apresentada. O erro deve ser gravado no log (Dicionario:usuarios_invalido)
